@@ -50,7 +50,7 @@ mongoose.connect(process.env.MONGO_URI)
    MODELS
 ============================= */
 const User = require("./models/points");
-const Donation = require("./models/Donation");
+const Donation = require("./models/donation");
 const Product = require("./models/Product");
 const Blog = require("./models/Blog");
 
