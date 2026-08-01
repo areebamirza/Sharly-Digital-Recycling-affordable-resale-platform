@@ -1,10 +1,10 @@
 // ==============================
 // Navbar.js — Sharly (UNCHANGED UI + FIXED LOGIC)
 // ==============================
-
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useCallback,useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import NavLinks from "./NavLinks";
+
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -31,7 +31,7 @@ const Navbar = () => {
   };
 
   // Load user
-  const loadUser = () => {
+  const loadUser = useCallback(() => {
     const name = localStorage.getItem("name");
     const points = Number(localStorage.getItem("points")) || 0;
     const userId = localStorage.getItem("userId");
@@ -43,7 +43,7 @@ const Navbar = () => {
       setUser(null);
       setAnimatedPoints(0);
     }
-  };
+  },[loadUser]);
 
   useEffect(() => {
     loadUser();
