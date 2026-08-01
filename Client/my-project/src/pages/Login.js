@@ -252,7 +252,7 @@ const Login = () => {
     try {
       setLoading(true);
 
-      const res  = await axios.post("http://localhost:5000/api/login", {
+      const res  = await axios.post("https://sharly-digital-recycling-affordable.onrender.com/api/login", {
         email: email.trim(),
         password,
       });

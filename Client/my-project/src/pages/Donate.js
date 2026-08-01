@@ -65,7 +65,7 @@ const Donate = () => {
       }
 
       const res = await axios.post(
-        "http://localhost:5000/api/donate",
+         "https://sharly-digital-recycling-affordable.onrender.com/api/donate",
         data,
         {
           headers: {

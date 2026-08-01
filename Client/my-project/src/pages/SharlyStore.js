@@ -10,7 +10,7 @@ const SharlyStore = () => {
   const [showCount, setShowCount] = useState(INITIAL_SHOW);
   const [products, setProducts] = useState([]);
 
-  const API = "http://localhost:5000/api";
+  const API = "https://sharly-digital-recycling-affordable.onrender.com/api";
 
   const handleFilter = (cat) => {
     setFilter(cat);

@@ -8,7 +8,7 @@ const Blogs = () => {
   const [showCount, setShowCount] = useState(INITIAL_SHOW);
   const [blogPosts, setBlogPosts] = useState([]);
 
-  const API = "http://localhost:5000/api";
+  const API = "https://sharly-digital-recycling-affordable.onrender.com/api";
 
   /* FETCH BLOGS */
   useEffect(() => {
