@@ -43,7 +43,7 @@ const Navbar = () => {
       setUser(null);
       setAnimatedPoints(0);
     }
-  },[loadUser]);
+  },[]);
 
   useEffect(() => {
     loadUser();
@@ -58,7 +58,7 @@ const Navbar = () => {
       window.removeEventListener("scroll", onScroll);
       window.removeEventListener("storage", onStorage);
     };
-  }, []);
+  }, [loadUser]);
 
   // close dropdown outside click
   useEffect(() => {
