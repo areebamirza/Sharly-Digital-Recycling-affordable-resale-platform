@@ -37,9 +37,9 @@ app.use("/uploads", express.static("uploads"));
 /* =============================
    DATABASE CONNECTION
 ============================= */
-mongoose.connect("mongodb+srv://areebamirza1408_db_user:areebamirza@cluster0.myspecc.mongodb.net/SharlyDatabase")
+// mongoose.connect("mongodb+srv://areebamirza1408_db_user:areebamirza@cluster0.myspecc.mongodb.net/SharlyDatabase")
 // mongoose
-
+mongoose.connect(process.env.MONGO_URI)
 //   .connect("mongodb://127.0.0.1:27017/SharlyDatabase")
   .then(() => console.log("MongoDB Connected ✅"))
   .catch((err) => console.log("MongoDB Error :", err));
@@ -76,11 +76,10 @@ app.post("/api/get-started", async (req, res) => {
     });
 
     const token = jwt.sign(
-      { id: user._id, name: user.name },
-      "secretkey",
-      { expiresIn: "1d" }
-    );
-
+  { id: user._id, name: user.name },
+  process.env.JWT_SECRET,
+  { expiresIn: "1d" }
+);
     res.status(201).json({
       message: "Account created successfully 🎉",
       token,
@@ -291,15 +290,15 @@ app.post("/api/chatbot", async (req, res) => {
   
 
   try {
-    const response = await fetch("https://api.anthropic.com/v1/messages", {
+    const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "x-api-key": process.env.ANTHROPIC_API_KEY,
-        "anthropic-version": "2023-06-01",
+        Authorization: `Bearer ${process.env.OPENROUTER_API_KEY}`,
+        
       },
       body: JSON.stringify({
-        model: "claude-haiku-4-5-20251001",
+        model: "meta-llama/llama-3.1-8b-instruct:free",
         max_tokens: 400,
         system: `You are Sharly, a friendly eco-assistant for the Sharly platform — a digital recycling and donation marketplace based in India. 
 
@@ -322,15 +321,15 @@ Rules:
         ],
       }),
     });
-
     const data = await response.json();
 
-    if (data.error) {
-      return res.status(500).json({ error: data.error.message });
-    }
+if (data.error) {
+  return res.status(500).json({ error: data.error.message });
+}
 
-    const reply = data.content[0].text;
-    res.json({ reply });
+const reply = data.choices[0].message.content;
+
+res.json({ reply });
 
   } catch (error) {
     console.error("Chatbot error:", error);
@@ -341,6 +340,8 @@ Rules:
 /* =============================
    SERVER START
 ============================= */
-app.listen(5000, () => {
-  console.log("Server running on port 5000 🚀");
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT} 🚀`);
 });
