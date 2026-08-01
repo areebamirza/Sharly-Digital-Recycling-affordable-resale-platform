@@ -1,0 +1,167 @@
+[
+  {
+    "id": 1,
+    "name": "Black Eco Canvas Duffle Bag",
+    "brand": "BY SHARLY",
+    "category": "Accessories",
+    "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=600&q=80",
+    "originalPrice": 1500,
+    "discountPrice": 1200,
+    "points": 800,
+    "tag": "Best Seller"
+  },
+  {
+    "id": 2,
+    "name": "Bamboo Phone Speaker Stand",
+    "brand": "BY SHARLY",
+    "category": "Tech",
+    "image": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=600&q=80",
+    "originalPrice": 2000,
+    "discountPrice": 1600,
+    "points": 1000,
+    "tag": "Eco Pick"
+  },
+  {
+    "id": 3,
+    "name": "Organic Berry Smoothie Kit",
+    "brand": "BY SHARLY",
+    "category": "Food & Drink",
+    "image": "https://images.unsplash.com/photo-1502741224143-90386d7f8c82?w=600&q=80",
+    "originalPrice": 800,
+    "discountPrice": 600,
+    "points": 400,
+    "tag": "Popular"
+  },
+  {
+    "id": 4,
+    "name": "Eco Friendly Canvas Backpack",
+    "brand": "BY SHARLY",
+    "category": "Accessories",
+    "image": "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?w=600&q=80",
+    "originalPrice": 1800,
+    "discountPrice": 1400,
+    "points": 900,
+    "tag": "New"
+  },
+  {
+    "id": 5,
+    "name": "Natural Wooden Bowl Set",
+    "brand": "BY SHARLY",
+    "category": "Home & Kitchen",
+    "image": "https://images.pexels.com/photos/461428/pexels-photo-461428.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "originalPrice": 1200,
+    "discountPrice": 950,
+    "points": 600,
+    "tag": "Eco Pick"
+  },
+  {
+    "id": 6,
+    "name": "Bamboo Reusable Straw Set",
+    "brand": "BY SHARLY",
+    "category": "Lifestyle",
+    "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80",
+    "originalPrice": 500,
+    "discountPrice": 350,
+    "points": 200,
+    "tag": "Best Seller"
+  },
+  {
+    "id": 7,
+    "name": "Organic Cotton Tote Bag",
+    "brand": "BY SHARLY",
+    "category": "Accessories",
+    "image": "https://images.unsplash.com/photo-1544816155-12df9643f363?w=600&q=80",
+    "originalPrice": 700,
+    "discountPrice": 500,
+    "points": 300,
+    "tag": "Popular"
+  },
+  {
+    "id": 8,
+    "name": "Solar Power Charger",
+    "brand": "BY SHARLY",
+    "category": "Tech",
+    "image": "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=600&q=80",
+    "originalPrice": 3500,
+    "discountPrice": 2800,
+    "points": 1800,
+    "tag": "New"
+  },
+  {
+    "id": 9,
+    "name": "Herb & Mint Drinks Bundle",
+    "brand": "BY SHARLY",
+    "category": "Food & Drink",
+    "image": "https://images.unsplash.com/photo-1544145945-f90425340c7e?w=600&q=80",
+    "originalPrice": 900,
+    "discountPrice": 700,
+    "points": 450,
+    "tag": "Eco Pick"
+  },
+  {
+  "id": 10,
+  "name": "Bamboo Toothbrush Set (4 Pack)",
+  "brand": "BY SHARLY",
+  "category": "Lifestyle",
+  "image": "https://images.pexels.com/photos/4465126/pexels-photo-4465126.jpeg?auto=compress&cs=tinysrgb&w=600",
+  "originalPrice": 400,
+  "discountPrice": 250,
+  "points": 150,
+  "tag": "Eco Pick"
+},
+{
+  "id": 11,
+  "name": "Natural Soy Wax Candle Set",
+  "brand": "BY SHARLY",
+  "category": "Home & Kitchen",
+  "image": "https://images.pexels.com/photos/4195588/pexels-photo-4195588.jpeg?auto=compress&cs=tinysrgb&w=600",
+  "originalPrice": 900,
+  "discountPrice": 650,
+  "points": 300,
+  "tag": "New"
+},
+{
+  "id": 13,
+  "name": "Reusable Stainless Steel Water Bottle",
+  "brand": "BY SHARLY",
+  "category": "Lifestyle",
+  "image": "https://images.pexels.com/photos/3735208/pexels-photo-3735208.jpeg?auto=compress&cs=tinysrgb&w=600",
+  "originalPrice": 1000,
+  "discountPrice": 750,
+  "points": 400,
+  "tag": "Popular"
+},
+{
+  "id": 14,
+  "name": "Indoor Plant Starter Kit",
+  "brand": "BY SHARLY",
+  "category": "Home & Kitchen",
+  "image": "https://images.pexels.com/photos/4503277/pexels-photo-4503277.jpeg?auto=compress&cs=tinysrgb&w=600",
+  "originalPrice": 1500,
+  "discountPrice": 1100,
+  "points": 700,
+  "tag": "Eco Pick"
+},
+{
+  "id": 15,
+  "name": "Organic Berry Smoothie Kit",
+  "brand": "BY SHARLY",
+  "category": "Food & Drink",
+  "image": "https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&w=600",
+  "originalPrice": 800,
+  "discountPrice": 600,
+  "points": 400,
+  "tag": "Popular"
+},
+{
+  "id": 17,
+  "name": "Portable Solar Power Charger",
+  "brand": "BY SHARLY",
+  "category": "Tech",
+  "image": "https://images.pexels.com/photos/356036/pexels-photo-356036.jpeg?auto=compress&cs=tinysrgb&w=600",
+  "originalPrice": 3500,
+  "discountPrice": 2800,
+  "points": 1800,
+  "tag": "New"
+}
+]
